@@ -43,7 +43,7 @@ EOF
   }
 }
 
-/*resource "aws_instance" "three" {
+resource "aws_instance" "three" {
   ami             = "ami-0fe630eb857a6ec83"
   instance_type   = "t2.micro"
   key_name        = "nv"
@@ -63,7 +63,7 @@ resource "aws_instance" "four" {
   tags = {
     Name = "app-server-2"
   }
-}*/
+}
 
 resource "aws_security_group" "five" {
   name = "elb-sg"
